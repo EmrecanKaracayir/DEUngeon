@@ -1,0 +1,7 @@
+﻿  Main.cpp
+  DEUngeon.vcxproj -> D:\Projects\DEUngeon\out\DEUngeon\bin\Debug - x64\DEUngeon.exe
+D:\Projects\DEUngeon\projects\DEUngeon\include\BearLibTerminal.h(362): warning C6308: 'realloc' might return null pointer: assigning null pointer to 'char * `char const * __cdecl terminal_vsprintf(char const *,char *)'::`2'::buffer', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.
+D:\Projects\DEUngeon\projects\DEUngeon\include\BearLibTerminal.h(354): warning C28182: Dereferencing NULL pointer. 'buffer' contains the same NULL value as 'realloc()`362' did. 
+D:\Projects\DEUngeon\projects\DEUngeon\include\BearLibTerminal.h(399): warning C6308: 'realloc' might return null pointer: assigning null pointer to 'wchar_t * `wchar_t const * __cdecl terminal_vswprintf(wchar_t const *,char *)'::`2'::buffer', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.
+D:\Projects\DEUngeon\projects\DEUngeon\include\BearLibTerminal.h(386): warning C28182: Dereferencing NULL pointer. 'buffer' contains the same NULL value as 'realloc()`399' did. 
+D:\Projects\DEUngeon\projects\DEUngeon\src\DEUngeon\Map.hpp(65): warning C26495: Variable 'Map::map_w' is uninitialized. Always initialize a member variable (type.6).

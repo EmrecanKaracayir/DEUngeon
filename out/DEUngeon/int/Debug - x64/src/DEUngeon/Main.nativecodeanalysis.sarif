@@ -1,0 +1,698 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6308",
+          "message": {
+            "text": "'realloc' might return null pointer: assigning null pointer to 'char * `char const * __cdecl terminal_vsprintf(char const *,char *)'::`2'::buffer', which is passed as an argument to 'realloc', will cause the original memory block to be leaked."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                },
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 23,
+                  "endLine": 362,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "terminal_vsprintf",
+                  "decoratedName": "?terminal_vsprintf@@YAPEBDPEBDPEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'buffer' contains the same NULL value as 'realloc()`362' did. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                },
+                "region": {
+                  "startLine": 354,
+                  "startColumn": 5,
+                  "endLine": 354,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "terminal_vsprintf",
+                  "decoratedName": "?terminal_vsprintf@@YAPEBDPEBDPEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 343,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 344,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 345,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 347,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 354,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 358,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume '1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 354,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6308",
+          "message": {
+            "text": "'realloc' might return null pointer: assigning null pointer to 'wchar_t * `wchar_t const * __cdecl terminal_vswprintf(wchar_t const *,char *)'::`2'::buffer', which is passed as an argument to 'realloc', will cause the original memory block to be leaked."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                },
+                "region": {
+                  "startLine": 399,
+                  "startColumn": 26,
+                  "endLine": 399,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "terminal_vswprintf",
+                  "decoratedName": "?terminal_vswprintf@@YAPEB_WPEB_WPEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'buffer' contains the same NULL value as 'realloc()`399' did. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                },
+                "region": {
+                  "startLine": 386,
+                  "startColumn": 5,
+                  "endLine": 386,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "terminal_vswprintf",
+                  "decoratedName": "?terminal_vswprintf@@YAPEB_WPEB_WPEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 376,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 379,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 381,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 389,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 393,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 395,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 398,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 399,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 384,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume '1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Map::map_w' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/src/DEUngeon/Map.hpp"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Map::{ctor}",
+                  "decoratedName": "??0Map@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Map::map_w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Map::map_h' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/src/DEUngeon/Map.hpp"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Map::{ctor}",
+                  "decoratedName": "??0Map@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Map::map_h"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/include/BearLibTerminal.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4c1621d98ea5b35e579e7bf3f35a6908af5d0a5273812b2c565e489204f72296"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Projects/DEUngeon/projects/DEUngeon/src/DEUngeon/Map.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "35ccaf81aa2905a8d7224e21371faa3733b6330233c1ce37c6b95173f4d3366e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/deungeon/projects/deungeon/src/deungeon/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "10edb04daf9da09a6f9a3533186691789dc0fb74d6a53fe81964cfc59b0b4118"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/deungeon/projects/deungeon/src/deungeon/actor.hpp"
+          },
+          "hashes": {
+            "sha-256": "382c3e7c061bb258fc8fa4c5c20784c501fad0aa284299cfd1656af52bbd05da"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/deungeon/projects/deungeon/src/deungeon/engine.hpp"
+          },
+          "hashes": {
+            "sha-256": "e3ba25bfed0ad330f7e19456da6a2d457f9d3521e62bd8762bf21b44e6b0757b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/projects/deungeon/projects/deungeon/src/deungeon/pathfinding.hpp"
+          },
+          "hashes": {
+            "sha-256": "f3694a312f644d4fdba0993deffaba106c063e20ebe525afaa8ef542d8a0ea9a"
+          }
+        }
+      ]
+    }
+  ]
+}

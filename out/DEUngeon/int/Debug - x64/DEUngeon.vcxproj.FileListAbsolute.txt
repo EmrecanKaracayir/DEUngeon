@@ -1,0 +1,2 @@
+D:\Projects\DEUngeon\out\DEUngeon\bin\Debug - x64\DEUngeon.exe.lastcodeanalysissucceeded
+D:\Projects\DEUngeon\out\DEUngeon\int\Debug - x64\NativeCodeAnalysis.read.1.tlog
